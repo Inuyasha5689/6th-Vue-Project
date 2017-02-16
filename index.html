@@ -3,7 +3,7 @@
 
 <div id="app">
     <ul>
-        <li v-for="(ingredient, i) in ingredients">{{ ingredient } ({{ i }})}</li>
+        <li v-for="(ingredient, i) in ingredients">{{ ingredient }} ({{ i }})</li>
     </ul>
     <hr>
     <ul>
@@ -11,9 +11,12 @@
             <div v-for="(value, key, index) in person">{{ key }}: {{ value }}({{ index }})</div>    
         </li>
     </ul>
+    <span v-for="n in 10">{{ n }}</span>
     <hr>
     <template v-for="(ingredient, index) in ingredients">
         <h1>{{ ingredient }}</h1>
         <p>{{ index }}</p>
     </template>
 </div>
+
+<script src="app.js"></script>
